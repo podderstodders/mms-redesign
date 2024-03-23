@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murphy Magic</title>
+    <link rel="stylesheet" href="./reset.min.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+    <div id="root">
+        <header class="header">
+            <div class="header-top">
+                <div class="mobile-menu">
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 6H12H19M5 12H19M5 18H19" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="tablet-list">
+                    <ul role="list">
+                        <li><a href="./index.html" role="link">Homepage</a></li>
+                        <li><a href="./searchView.html"role="link">View Products List</a></li>
+                        <li><a href="./singleItem.html"role="link" id="womenHover">Single Item View</a></li>
+                    </ul>
+                </div>
+               
+                <div class="mobile-cart">
+                    <div id="user-service">
+                        <ul role="list">
+                            <li><a role="link">client services</a></li>
+                            <li><a role="link">login</a></li>
+                        </ul>
+                    </div>
+                    <div id="bookmark">
+                        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div id="cart">
+                        <svg width="25px" height="25px" viewBox="-1.5 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Path_1" data-name="Path 1" d="M80.974,837h-10V825.969h1.989A2.023,2.023,0,0,1,75,824H76.88a2.021,2.021,0,0,1,2.042,1.969h2.052Zm-5-12.011c-1.374,0-2.015.339-2.033.98h4.035C77.961,825.368,77.207,824.978,75.974,824.989Zm4,2.011H78.926v.994h-.943V827H73.934v.994H72.96V827H71.943v9h8.031Z" transform="translate(-70.974 -824)" fill="#ffffff" stroke-width="3"/>
+                          </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="./logo.png" alt="" height="80">
+            </div>
+            <input type="search" name="" id="" placeholder="CLICK ME"/>
+            <svg id="searchSvgIcon" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+    
+            <div class="searchOption">
+                <h2>MOST SEARCH</h2>
+               
+                    <a href="#" role="link">Black Label</a>
+          
+               
+                    <a href="#" role="link">anverdi</a>
+             
+                    <a href="#" role="link">pstd</a>
+              
+                    <a href="#" role="link">Tornado</a>
+           
+            </div>
+            <div class="headerExitBtn">X</div>
+            <div class="backgroundDarken"></div>
+        </header>
+        <main class="app">
+            <div class="mobile-header--nav">
+                <ul>
+                    <li><a href="./index.html" role="link">Home</a></li>
+                    <li><a href="./searchView.html" role="link">View All</a></li>
+                    <li><a href="./singleItem.html" role="link">View Single Item</a></li>
+                </ul>
+            </div>
+            <div class="app-rows">
+                <div class="app-row">Homepage</div>
+                <div class="app-row">Work In Progress</div>
+                <div class="app-row">Work In Progress</div>
+                <div class="app-row">Work In Progress</div>
+            </div>
+            
+        </main>
+        <footer class="footer">
+            <div class="footer-accordion">
+                <div class="tab">
+                    <input type="checkbox" name="accordion-1" id="cb11" checked>
+                    <label for="cb11" class="tab__label">General Information</label>
+                    <div class="tab__content">
+                        <p>
+                           Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    </div>
+                <div class="tab">
+                    <input type="checkbox" name="accordion-1" id="cb21">
+                    <label for="cb21" class="tab__label">Hours</label>
+                    <div class="tab__content">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" name="accordion-1" id="cb31">
+                    <label for="cb31" class="tab__label">About Murphys</label>
+                    <div class="tab__content">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="checkbox" name="accordion-1" id="cb41">
+                    <label for="cb41" class="tab__label">Join Us</label>
+                    <div class="tab__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos reiciendis esse blanditiis quam, incidunt quia commodi officia sed voluptate odit, assumenda sit porro ad!</p>
+                    </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb51">
+                        <label for="cb51" class="tab__label">Discover</label>
+                        <div class="tab__content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos reiciendis esse blanditiis quam, incidunt quia commodi officia sed voluptate odit, assumenda sit porro ad!</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb61">
+                        <label for="cb61" class="tab__label">Information</label>
+                        <div class="tab__content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos reiciendis esse blanditiis quam, incidunt quia commodi officia sed voluptate odit, assumenda sit porro ad!</p>
+                        </div>
+                    </div>
+                      
+            </div>
+            <section class="tablet-footer">
+                <div class="tablet-col">
+                    <h5>General Information</h5>
+                    <p> <span class="bolder">Address: </span>11500 Gold Dredge Way, Rancho Cordova, CA 95742</p>
+                    <p> <span class="bolder">Phone:</span> 1.800.853.7403</p>
+                </div>
+                <div class="tablet-col">
+                    <h5>Hours</h5>
+                    <div>
+                        <p>Monday - 7:30 AM-4:30 PM</p>
+                        <p>Tuesday - 7:30 AM-4:30 PM</p>
+                        <p>Wednesday - 7:30 AM-4:30 PM</p>
+                        <p>Thursday - 7:30 AM-4:30 PM</p>
+                        <p>Friday - 7:30 AM-4:30 PM</p>
+                        <p>Saturday - Closed</p>
+                        <p>Sunday - Closed</p>
+                    </div>
+                </div>
+                <div class="tablet-col">
+                    <h5>About Murphy's</h5>
+                    <ul role="list">
+                        <li> <a role="link">About Us</a></li>
+                        <li> <a role="link">Contacts</a></li>
+                        <li> <a role="link">Careers</a></li>
+                        <li> <a role="link">Privacy Policy</a></li>
+                        <li> <a role="link">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="tablet-col">
+                    <h5>Join Us</h5>
+                    <ul role="list">
+                        <li> <a role="link">5 FREE Trickets</a></li>
+                        <li> <a role="link">Submit Magic</a></li>
+                        <li> <a role="link">Facebook</a></li>
+                        <li> <a role="link">Twitter</a></li>
+                        <li> <a role="link">Instagram</a></li>
+                        <li> <a role="link">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="tablet-col">
+                    <h5>Discover</h5>
+                    <ul role="list">
+                        <li> <a role="link">Collectible Cards</a></li>
+                        <li> <a role="link">Downloads</a></li>
+                        <li> <a role="link">Tricks</a></li>
+                        <li> <a role="link">Books</a></li>
+                        <li> <a role="link">Black Label</a></li>
+                        <li> <a role="link">Elite Brands</a></li>
+                    </ul>
+                </div>
+                <div class="tablet-col">
+                    <h5>Information</h5>
+                    <ul role="list">
+                        <li> <a role="link">Wholesale Inquiries</a></li>
+                        <li> <a role="link">Dealer Center</a></li>
+                        <li> <a role="link">Vendor Center</a></li>
+                        <li> <a role="link">Developer Center</a></li>
+                        <li> <a role="link">Adjust</a></li>
+                        <li> <a role="link">Accessibility</a></li>
+                    </ul>
+                </div>
+               
+            </section>
+            <div class="center-logo">&copy; 2024 Murphy's Magic</div>
+        </footer>
+    </div>
+</body>
+</html>

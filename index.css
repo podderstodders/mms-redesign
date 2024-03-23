@@ -1,0 +1,58 @@
+
+
+.app {
+    position: relative;
+    
+}
+
+.mobile-header--nav {
+ 
+    position: sticky;
+    top: 150px;
+    width: 100%;
+    background-color: orange;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mobile-header--nav ul {
+    
+    list-style: none;
+    padding-left: 0;
+    padding: 1em;
+    display: flex;
+    gap: 1.5em;
+    white-space: nowrap;
+
+}
+
+.mobile-header--nav ul a[role=link] {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile-header--nav ul a[role=link]:hover {
+    text-decoration: underline;
+    text-underline-offset: 1em;
+    text-decoration-thickness: 4px;
+    text-decoration-color: white;
+}
+
+@media(min-width: 1025px){
+    .mobile-header--nav {
+        display: none;
+    }
+}
+
+.app-row {
+    height: 25vh;
+    background-color: #ccc;
+    display: grid;
+    place-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.app-row:not(:last-child) {
+    margin: 1em 0;
+}
