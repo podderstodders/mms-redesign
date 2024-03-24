@@ -1,10 +1,9 @@
 .app {
     position: relative;
-    
 }
 
 .mobile-header--nav {
- 
+    overflow-x: scroll;
     position: sticky;
     top: 150px;
     left: 0;
@@ -81,9 +80,15 @@
 }
 
 
-.app-search--filterBlock {
+/* .app-search--filterBlock {
+    height: 50%;
+} */
+
+.app-search--filterBlock__fixed {
     padding: 0.5em;
 }
+
+
 
 .filter-row {
     padding: 0.5em;
@@ -357,6 +362,14 @@
 }
 
 @media(min-width: 1025px){
+
+    /* .app-search--filterBlock__fixed {
+        position: fixed;
+        height: 700px;
+        width: 315px;
+        background-color: pink;
+        overflow-y: scroll;
+    } */
     .app-search--filterBlock__tablet {
         display: block;
     }
@@ -385,3 +398,72 @@
         display: none;
     }
 }
+
+
+/* page selection */
+
+.asi-pageSelection {
+    margin: 1.25em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.asi-pages {
+    display: flex;
+    gap: 1.25em;
+}
+
+.asi-page--back a[role=link],
+.asi-page a[role=link],
+.asi-page--next a[role=link] {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.asi-page--back {
+    margin-right: 1rem;
+
+}
+
+.asi-page--back a[role=link] {
+    color: #ccc;
+}
+
+.asi-page--next {
+    margin-left: 1rem;
+}
+
+.asi-page:not(#firstPage) a[role=link]{
+    padding: .25rem .5rem;
+    border-radius: 50%;
+}
+.asi-page:not(#firstPage) a[role=link]:hover {
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
+/* first page */
+.asi-page#firstPage {
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 30px;
+    text-align: center;
+}
+
+/* next-page */
+.asi-page--next {
+    margin-left: 1rem;
+}
+
+.asi-page--next a[role=link] {
+    padding: .25rem .5rem;
+    border-radius: 50%;
+}
+
+.asi-page--next a[role=link]:hover {
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
+

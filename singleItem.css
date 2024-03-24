@@ -5,7 +5,7 @@
     width: 100%;
     background-color: orange;
     z-index: 1;
-    overflow: hidden;
+    overflow: scroll;
 }
 .mobile-header--nav ul {
     
