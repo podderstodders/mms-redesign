@@ -27,6 +27,7 @@
 .mobile-header--nav ul a[role=link] {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .mobile-header--nav ul a[role=link]:hover {
@@ -54,6 +55,7 @@
     text-decoration: none;
     text-transform: capitalize;
     color: inherit;
+    cursor: pointer;
 }
 
 .app-path a[role=link]:hover {
@@ -74,20 +76,15 @@
     /* max-width: 1500px;
     margin: 2em auto; */
     display: grid;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* border: 1px solid black; */
 }
 
+
+
 .app-search--filterBlock {
-
 }
 
-.app-search--filter .filter-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 1em;
-}
 
 .filter-row {
     display: flex;
@@ -97,13 +94,14 @@
 }
 
 .filter1-row {
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
     padding: 0.5em;
 }
 
 .filter1-row a[role=link] {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 .filter1-row a[role=link]:hover {
     text-decoration: underline;
@@ -132,7 +130,6 @@
 }
 
 .filter-actions {
-
     display: flex;
     gap: 1em;
     align-items: center;
@@ -145,13 +142,85 @@
 }
 
 .app-search--items {
-    padding: 0.5em;
-    border-left: 1px solid black;
+    padding: 0.5em 1em;
+    border-left: 2px solid black;
 }
+.app-search--items p#smaller {
+    font-size: 0.75rem;
+    overflow: hidden;
+}
+/* featured items */
+.app-search--featuredItems {
+    overflow: scroll;   
+}
+
+.featuredItems--container {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 2rem;
+
+}
+
+.featuredItems--item {
+    flex-basis: 140px;
+}
+
+.featured-item--image {
+    position: relative;
+    height: 144px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    text-align: center;
+    display: grid;
+    place-content: center;
+}
+
+.image__bookmark{
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.image__bookmark:hover {
+    opacity: 0.5;
+}
+
+.featured-item--tag {
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.55rem;
+}
+
+.featured-item--tag a[role=link]:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.featured-item--title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+}
+
+.featured-item--creator {
+    font-size: 0.67rem;
+}
+
+.featured-item--price {
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+/* end of featured items */
 
 .app-search--filter {
     display: none;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .asi-items {
@@ -171,12 +240,26 @@
 }
 
 .app-search--item .asi-left {
+    position: relative;
+}
+
+.asi-left--image {
     width: 144px;
     height: 144px;
     background-color: #ccc;
     display: grid;
     place-content: center;
     text-align: center;
+}
+
+.asi-image--overlay {
+    position: absolute;
+    top: 7.4px;
+    left: 7.4px;
+    width: 144px;
+    height: 144px;
+    background-color: rgba(26, 50, 63, 0.7);
+    z-index: -1;
 }
 
 .app-search--item .asi-mid {
@@ -191,6 +274,7 @@
 .asi-mid .item--tag a[role=link] {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 .asi-mid .item--tag a[role=link]:hover {
     text-decoration: underline;
@@ -208,7 +292,11 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-
+.asi-right .item--difficulty a[role=link] {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
 .asi-right .item--price {
     font-weight: 700;
 }
@@ -221,8 +309,11 @@
 .asf-input input[type=search] {
     padding-left: 2em;
     width: 100%;
+    outline: none;
 }
-
+.asf-input input[type=search]:focus {
+    outline: 1px solid #1a323f;
+}
 .asf-input svg {
     position: absolute;
     top: 5px;

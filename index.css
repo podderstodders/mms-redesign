@@ -29,6 +29,7 @@
 .mobile-header--nav ul a[role=link] {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .mobile-header--nav ul a[role=link]:hover {

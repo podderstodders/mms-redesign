@@ -21,6 +21,7 @@
 .mobile-header--nav ul a[role=link] {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .mobile-header--nav ul a[role=link]:hover {
@@ -49,6 +50,7 @@
     text-decoration: none;
     text-transform: capitalize;
     color: inherit;
+    cursor: pointer;
 }
 
 .app-path a[role=link]:hover {
@@ -161,6 +163,7 @@
 .flex-row a[role=blockLink] {
     color: inherit;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .full-row {
@@ -199,6 +202,7 @@
 .center-row a[role=link] {
     color: inherit;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .text-row {
@@ -339,6 +343,7 @@ span.bolder {
 .tags-item a[role=link] {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .tags-item a[role=link]:hover {

@@ -121,6 +121,7 @@
 
 .tablet-col a[role=link] {
   text-decoration: underline;
+  cursor: pointer;
   
 }
 
