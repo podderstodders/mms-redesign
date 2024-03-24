@@ -8,10 +8,10 @@
 }
 
 .footer-accordion .tab:first-child {
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(179, 179, 179);
 }
 .footer-accordion .tab {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(216, 216, 216, 0.5);
     border-bottom: 1px solid black;
  
 }

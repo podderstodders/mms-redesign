@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murphy Magic</title>
+    <title>Murphy's Magic View All Page</title>
     <link rel="stylesheet" href="./reset.min.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./viewAll.css">
@@ -80,7 +80,7 @@
             <div class="app-search--container">
                 <div class="app-search--filterBlock">
                     <div class="filter-row">
-                        <h2>Items</h2>
+                        <h2>Products Filter</h2>
                         <div class="filter-actions">
                             <div class="filter-btn">
                                 <span>Filter</span>
@@ -105,8 +105,75 @@
                             </div>
                         </div>
                     </div>
-                    <div class="filter1-row">
-                        <p><a role="link">Decks</a> > <span class="underline">Playing Cards</span></a></p>
+                    <div class="app-search--filterBlock__tablet">
+                        <div class="filter1-row">
+                            <p><a role="link">Decks</a> > <span class="underline">Playing Cards</span></a></p>
+                        </div>
+                        <div class="filter-categories">
+                            <h4>Categories</h4>
+                            <ul>
+                                <!-- List Items -->
+                                <li><a href="#" role="link">Card Magic & Trick Decks</a></li>
+                                <li><a href="#" role="link">Lectures & Conventions</a></li>
+                                <li><a href="#" role="link">Magazines</a></li>
+                                <li><a href="#" role="link">Money Magic</a></li>
+                                <li><a href="#" role="link">Posters, Gifts & Collectables</a></li>
+                                <li><a href="#" role="link">Refills</a></li>
+                                <li><a href="#" role="link">Silks and Silk Magic</a></li>
+                                <li><a href="#" role="link">Special Effects (Fire, Smoke, Sound)</a></li>
+                                <li><a href="#" role="link">Sponges and Sponge Magic</a></li>
+                                <li><a href="#" role="link">Tables and Cases</a></li>
+                                <li><a href="#" role="link">Theory, History & Business</a></li>
+                                <li><a href="#" role="link">Toy Magic (Toy, Kits, Puzzles)</a></li>
+                                <li><a href="#" role="link">Utility</a></li>
+                                <li><a href="#" role="link">Playing Cards</a></li>
+                                <li><a href="#" role="link">Tricks</a></li>
+                                <li><a href="#" role="link">DVDs</a></li>
+                                <li><a href="#" role="link">Books & Magazines</a></li>
+                                <li><a href="#" role="link">Supreme Books (Limited)</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-categories">
+                            <h4>Performer Type</h4>
+                            <ul>
+                                <!-- List Items -->
+                                <li><a href="#" role="link">Cardist</a></li>
+                                <li><a href="#" role="link">Close Up Performer</a></li>
+                                <li><a href="#" role="link">Comedy Performer</a></li>
+                                <li><a href="#" role="link">Escape Performer</a></li>
+                                <li><a href="#" role="link">Gambling Performer</a></li>
+                                <li><a href="#" role="link">Illusionist</a></li>
+                                <li><a href="#" role="link">Juggling Performer</a></li>
+                                <li><a href="#" role="link">Kids Show & Balloon Performer</a></li>
+                                <li><a href="#" role="link">Mentalism, Bizarre & Psychokinesis</a></li>
+                                <li><a href="#" role="link">Parlor Performer</a></li>
+                                <li><a href="#" role="link">Religious & Gospel Performer</a></li>
+                                <li><a href="#" role="link">Street Performer</a></li>
+                                <li><a href="#" role="link">Walk Around Performer</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-categories">
+                            <h4>Seasonal Items</h4>
+                            <ul>
+                                <!-- List Items -->
+                                <li><a href="#" role="link">Christmas Themed</a></li>
+                                <li><a href="#" role="link">Halloween Themed</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="filter-categories">
+                            <h4>Price Range</h4>
+                            <ul role="radioList">
+                                <!-- List Items -->
+                                <li><input type="radio" name="priceRange" id="pr-any"><label for="">Any</label></li>
+                                <li><input type="radio" name="priceRange" id="pr-under10">Under $25</li>
+                                <li><input type="radio" name="priceRange" id="pr">$25-$50</li>
+                                <li><input type="radio" name="priceRange" id="pr-">$50-$100</li>
+                                <li><input type="radio" name="priceRange" id="pr-">$100-$200</li>
+                                <li><input type="radio" name="priceRange" id="pr-">$200+</li>
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="app-search--items">
@@ -129,8 +196,9 @@
                         </div>
                     </div>
                     <p id="smaller">1728 results found</p>
+                    <h3>Featured Products</h3>
                     <div class="app-search--featuredItems">
-                        <h3>Featured Products</h3>
+                        
                         <div class="featuredItems--container">
                             <div class="featuredItems--item">
                                 <div class="featured-item--image">image placeholder <div class="image__bookmark" >
@@ -369,101 +437,7 @@
                                 <div class="item--price">R: $12.95</div>
                             </div>
                         </div>
-                        <div class="app-search--item">
-                            <div class="asi-left">
-                                <div class="asi-left--image">image placeholder <div class="image__bookmark" >
-                                        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div></div>
-                                <div class="asi-image--overlay"></div>
-                            </div>
-                            <div class="asi-mid">
-                                <div class="item--tag"><a role="link">Playing Cards</a></div>
-                                <div class="item--title">Guardians of the Galaxy Playing Cards</div>
-                                <div class="item--creator">by theory11</div>
-                            </div>
-                            <div class="asi-right">
-                                <div class="item--difficulty"><a role="link">No Skill Required</a></div>
-                                <div class="item--price">R: $12.95</div>
-                            </div>
-                        </div>
-                        <div class="app-search--item">
-                            <div class="asi-left">
-                                <div class="asi-left--image">image placeholder <div class="image__bookmark" >
-                                        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div></div>
-                                <div class="asi-image--overlay"></div>
-                            </div>
-                            <div class="asi-mid">
-                                <div class="item--tag"><a role="link">Playing Cards</a></div>
-                                <div class="item--title">Guardians of the Galaxy Playing Cards</div>
-                                <div class="item--creator">by theory11</div>
-                            </div>
-                            <div class="asi-right">
-                                <div class="item--difficulty"><a role="link">No Skill Required</a></div>
-                                <div class="item--price">R: $12.95</div>
-                            </div>
-                        </div>
-                        <div class="app-search--item">
-                            <div class="asi-left">
-                                <div class="asi-left--image">image placeholder <div class="image__bookmark" >
-                                        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div></div>
-                                <div class="asi-image--overlay"></div>
-                            </div>
-                            <div class="asi-mid">
-                                <div class="item--tag"><a role="link">Playing Cards</a></div>
-                                <div class="item--title">Guardians of the Galaxy Playing Cards</div>
-                                <div class="item--creator">by theory11</div>
-                            </div>
-                            <div class="asi-right">
-                                <div class="item--difficulty"><a role="link">No Skill Required</a></div>
-                                <div class="item--price">R: $12.95</div>
-                            </div>
-                        </div>
-                        <div class="app-search--item">
-                            <div class="asi-left">
-                                <div class="asi-left--image">image placeholder <div class="image__bookmark" >
-                                        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div></div>
-                                <div class="asi-image--overlay"></div>
-                            </div>
-                            <div class="asi-mid">
-                                <div class="item--tag"><a role="link">Playing Cards</a></div>
-                                <div class="item--title">Guardians of the Galaxy Playing Cards</div>
-                                <div class="item--creator">by theory11</div>
-                            </div>
-                            <div class="asi-right">
-                                <div class="item--difficulty"><a role="link">No Skill Required</a></div>
-                                <div class="item--price">R: $12.95</div>
-                            </div>
-                        </div>
-                        <div class="app-search--item">
-                            <div class="asi-left">
-                                <div class="asi-left--image">image placeholder <div class="image__bookmark" >
-                                        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5 6.2C5 5.07989 5 4.51984 5.21799 4.09202C5.40973 3.71569 5.71569 3.40973 6.09202 3.21799C6.51984 3 7.07989 3 8.2 3H15.8C16.9201 3 17.4802 3 17.908 3.21799C18.2843 3.40973 18.5903 3.71569 18.782 4.09202C19 4.51984 19 5.07989 19 6.2V21L12 16L5 21V6.2Z" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div></div>
-                                <div class="asi-image--overlay"></div>
-                            </div>
-                            <div class="asi-mid">
-                                <div class="item--tag"><a role="link">Playing Cards</a></div>
-                                <div class="item--title">Guardians of the Galaxy Playing Cards</div>
-                                <div class="item--creator">by theory11</div>
-                            </div>
-                            <div class="asi-right">
-                                <div class="item--difficulty"><a role="link">No Skill Required</a></div>
-                                <div class="item--price">R: $12.95</div>
-                            </div>
-                        </div>
+        
                         <div class="app-search--item">
                             <div class="asi-left">
                                 <div class="asi-left--image">image placeholder <div class="image__bookmark" >
@@ -509,7 +483,7 @@
         <footer class="footer">
             <div class="footer-accordion">
                 <div class="tab">
-                    <input type="checkbox" name="accordion-1" id="cb11" checked>
+                    <input type="checkbox" name="accordion-1" id="cb11">
                     <label for="cb11" class="tab__label">General Information</label>
                     <div class="tab__content">
                         <p>
