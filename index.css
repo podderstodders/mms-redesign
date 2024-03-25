@@ -52,8 +52,6 @@
 }
 
 .app-row {
-  
-    background-color: #ccc;
     display: flex;
     /* text-transform: uppercase; */
     
@@ -157,26 +155,59 @@
 }
 
 /* exclusive vendor block */
+.app-row.gg {
 
-.lhs.griders {
+    flex-direction: column;
+}
+
+
+.app-row.gg .lhs {
+    text-align: center;
+}
+
+.mid.griders {
     display: grid;
-    
-    gap: 0.5rem;
+    padding: 0.5em;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
 }
 
 @media(min-width: 768px){
-    .lhs.griders {
-        grid-template-columns: repeat(2,1fr);
+    .mid.griders {
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
 @media(min-width: 1025px){
-    .lhs.griders {
-        grid-template-columns: repeat(3,1fr);
+    .mid.griders {
+        grid-template-columns: repeat(4,1fr);
      
     }
 }
 
+.gg .rhs {
+    text-align: center;
+    margin: 0.5rem 0;
+    overflow: hidden;
+}
+
+.gg .rhs a[role=link] {
+
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.gg .rhs a[role=link]:hover {
+    background-color: rgb(226, 226, 226);
+    color: black;
+}
 
 /* utility css */
 .centered {
@@ -185,7 +216,7 @@
 }
 
 .hidden {
-    overflow: scroll;
+   background-color: #ccc;
 }
 
 
@@ -197,12 +228,15 @@
     white-space: nowrap;
 }
 
+.rhs form input[type=text] {
+    width: 100px;
+}
 
 
 .rhs #righted {
     padding-top: 1em;
     padding-right: 0.5em;
-    text-align: right;
+    text-align: center;
     font-weight: 700;
     text-transform: uppercase;
 }
